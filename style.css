@@ -1,4 +1,43 @@
-.block{
-    height: 100px;
+body{
+    margin: 0;
+}
+.site{
+    display: grid;
+    grid-template-areas:
+    'sidebar header header' 
+    'sidebar transfer history'
+    'sidebar transfer history'
+}
+
+.header{
+    grid-area: header;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(38, 44, 64, 0.15);
+    margin-bottom: 56px ;
+}
+.sidebar{
+    grid-area: sidebar ;
     background-color: blue;
+    height: 900px;
+    width: 104px;
+    
+
+}
+.transfer{
+    grid-area: transfer;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(38, 44, 64, 0.15);
+    border-radius: 2px;
+    height: 544px;
+    width: 568px;
+    
+
+}
+.history{
+    background: #FFFFFF;
+    box-shadow: 0px 2px 6px rgba(38, 44, 64, 0.15);
+    border-radius: 2px;
+    height: 408px;
+    width: 688px;
+
 }
